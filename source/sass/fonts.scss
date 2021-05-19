@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fall-back;
+  src: local("Fira Sans Medium"),
+    url("../fonts/FiraSansMedium.woff2") format("woff2"),
+    url("../fonts/FiraSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fall-back;
+  src: local("Roboto Condensed Regular"),
+    url("../fonts/RobotoCondensedRegular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensedRegular.woff") format("woff");
+}
