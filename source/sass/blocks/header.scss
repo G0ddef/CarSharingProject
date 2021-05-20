@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $brown-100;
+}
+
+.header__logo-wrapper {
+  margin-right: 297px;
+  width: 65px;
+}
+
+.header__logo-link {
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.header__main-nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 219px;
+  padding: 0;
+  padding-top: 23px;
+  width: 475px;
+
+  list-style: none;
+}
+
+.header__main-nav-item {
+  margin-right: 20px;
+  width: 85px;
+
+  text-align: center;
+
+  &--about-us {
+    margin-right: 27px;
+    width: 50px;
+  }
+
+
+  &--comment {
+    margin-right: 16px;
+  }
+
+  &--contacts {
+    margin-right: 0;
+  }
+}
+
+.header__link {
+  @include text-style(18px, 21px);
+
+  display: block;
+  padding-bottom: 3px;
+
+  color: $white;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.7;
+
+    border-bottom: 1px solid $white;
+  }
+}
+
+.header__telephone {
+  @include text-style(18px, 21px);
+
+  margin: 0;
+  padding-top: 23px;
+
+  color: $white;
+}

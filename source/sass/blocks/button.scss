@@ -1,0 +1,20 @@
+.button {
+  @include text-style(16px, 18px);
+
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  width: 200px;
+  box-sizing: border-box;
+
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: $gold;
+
+  &--download {
+    margin-top: 63px;
+    margin-left: 200px;
+  }
+}
