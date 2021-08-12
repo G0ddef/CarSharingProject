@@ -1,0 +1,88 @@
+.questions {
+  margin-top: 175px;
+  margin-bottom: 172px;
+}
+
+.questions__form {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: 11px;
+  width: 500px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -75px;
+    left: -689px;
+
+    display: block;
+    width: 600px;
+    height: 450px;
+
+    background-image: url("../img/question-car.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.questions__form-wrapper {
+  padding: 0;
+
+  border: none;
+
+  &--input {
+    padding-top: 48px;
+  }
+}
+
+.questions__subtitle {
+  @include text-style(24px, 28px);
+
+  margin: 0;
+
+  font-family: "Fira sans", "Arial", sans-serif;
+  color: $black;
+}
+
+.questions__description {
+  @include text-style(16px, 18px);
+
+  margin: 0;
+  padding-top: 5px;
+
+  color: $black;
+}
+
+.questions__wrapper {
+  margin: 0;
+
+  &--tel {
+    margin-top: 20px;
+  }
+
+  &--button {
+    margin-top: 47px;
+  }
+}
+
+.questions__input {
+  @include text-style(16px, 18px);
+
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 414px;
+
+  color: $black;
+
+  border: none;
+  border-bottom: 1px solid $black;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

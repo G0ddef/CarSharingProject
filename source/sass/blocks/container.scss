@@ -1,0 +1,14 @@
+.container {
+  @include centring(0 auto, 1200px);
+
+  &--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &--header {
+    padding-top: 19px;
+    padding-bottom: 17px;
+  }
+}

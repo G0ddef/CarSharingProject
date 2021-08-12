@@ -1,0 +1,110 @@
+.rent-terms {
+  display: flex;
+  flex-direction: column;
+  padding-top: 182px;
+}
+
+.rent-terms__wrapper {
+  width: 300px;
+}
+
+.rent-terms__title {
+  @include text-style(24px, 28px);
+
+  width: 191px;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  color: $black;
+}
+
+.rent-terms__description {
+  @include text-style(16px, 18px);
+
+  margin: 0;
+  width: 172px;
+
+  color: $black;
+
+  &--first-paragraph {
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+
+  &--rent-auto {
+    width: auto;
+  }
+
+  &--description-list {
+    padding-top: 30px;
+    padding-left: 38px;
+
+    text-align: center;
+  }
+
+  &--second-block {
+    padding-top: 48px;
+    width: 189px;
+  }
+}
+
+.rent-terms__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 16px;
+  margin-left: 50px;
+  padding: 0;
+  width: 850px;
+
+  list-style: none;
+}
+
+.rent-terms__item {
+  margin-right: 50px;
+  width: 248px;
+
+  border: 1px solid $brown-100;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.rent-terms__number {
+  @include text-style(96px, 115px);
+
+  padding-left: 76px;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  color: #1b1818;
+  text-align: center;
+
+  opacity: 0.05;
+}
+
+.rent-terms__subtitle {
+  @include text-style(18px, 22px);
+
+  margin: 0;
+  width: 172px;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 500;
+  text-align: center;
+
+  &--experience {
+    padding-left: 44px;
+    width: 155px;
+  }
+
+  &--kiev {
+    padding-top: 7px;
+    padding-left: 36px;
+  }
+
+  &--mobile {
+    padding-top: 7px;
+    padding-left: 38px;
+  }
+}

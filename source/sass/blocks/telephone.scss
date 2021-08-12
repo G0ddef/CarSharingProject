@@ -1,0 +1,8 @@
+.telephone {
+  @include text-style(18px, 21px);
+
+  margin: 0;
+  padding-top: 23px;
+
+  color: $white;
+}

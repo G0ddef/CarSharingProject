@@ -1,0 +1,221 @@
+.car-sharing {
+  display: flex;
+  flex-direction: column;
+  padding-top: 65px;
+}
+
+.car-sharing__wrapper {
+  &--description {
+    margin-right: 50px;
+    padding-top: 77px;
+  }
+}
+
+.car-sharing__title {
+  @include text-style(48px, 57px);
+
+  margin: 0;
+  padding-left: 66px;
+  width: 455px;
+
+  font-family: "Fira Sans", "Arial", sans-serif;
+  color: $black;
+  font-weight: 500;
+  text-align: center;
+}
+
+.car-sharing__specification {
+  @include text-style(24px, 28px);
+
+  margin: 0;
+  padding-left: 64px;
+  padding-top: 21px;
+  width: 472px;
+
+  color: $black;
+  text-align: center;
+}
+
+.car-sharing__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 104px;
+  padding-left: 25px;
+  width: 550px;
+
+  list-style: none;
+}
+
+.car-sharing__item {
+  margin-right: 50px;
+  width: 148px;
+
+  border: 1px solid #332208;
+
+  &--best-car {
+    margin-right: 0;
+  }
+}
+
+.car-sharing__description {
+  @include text-style(16px, 19px);
+
+  position: relative;
+
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  width: 99px;
+
+  text-align: center;
+
+  &--cars {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 23px;
+      left: 44px;
+
+      display: block;
+      width: 60px;
+      height: 24px;
+
+      background-image: url("../img/car.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--cheapness {
+    padding-top: 70px;
+    padding-left: 21px;
+    width: 103px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 18px;
+      left: 55px;
+
+      display: block;
+      width: 36px;
+      height: 36px;
+
+      background-image: url("../img/card.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--best-car {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 18px;
+      left: 52px;
+
+      display: block;
+      width: 47px;
+      height: 32px;
+
+      background-image: url("../img/map.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.car-sharing__slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.car-sharing__slider-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+
+  list-style: none;
+}
+
+.car-sharing__img-wrapper {
+  margin: 0;
+}
+
+.car-sharing__slider-description {
+  @include text-style(16px, 19px);
+
+  margin: 0;
+  padding-top: 21px;
+  padding-left: 184px;
+
+  color: $black;
+}
+
+.car-sharing__text {
+  &--places {
+    padding-left: 21px;
+  }
+
+  &--km {
+    padding-left: 12px;
+  }
+}
+
+.car-sharing__slider-icon {
+  padding-top: 159px;
+  padding-left: 9px;
+  width: 16px;
+}
+
+.car-sharing__toggle {
+  position: relative;
+
+  margin: 0;
+  margin-top: 9px;
+  margin-left: 4px;
+  width: 8px;
+  height: 8px;
+
+  background-color: $black;
+  border-radius: 50%;
+
+  &--active {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    background-color: $gold;
+    cursor: pointer;
+  }
+}
+
+.car-sharing__conditions {
+  margin: 0;
+  margin-top: 156px;
+  margin-left: 148px;
+}
+
+.car-sharing__link {
+  @include text-style(16px, 19px);
+
+  display: inline-block;
+  padding-bottom: 4px;
+
+  color: $black;
+
+  &--contract {
+    margin-left: 17px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $black;
+  }
+}
