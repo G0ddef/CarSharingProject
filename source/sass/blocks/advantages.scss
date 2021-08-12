@@ -1,0 +1,147 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+}
+
+.advantages__column {
+  width: 296px;
+}
+
+.advantages__title {
+  @include text-style(24px, 28px);
+
+  margin: 0;
+
+  color: $black;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 47px;
+
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+
+  padding-bottom: 28px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    right: 0;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background-color: $black;
+    border-radius: 50%;
+  }
+
+  &--washing {
+    padding-left: 66px;
+
+    &::after {
+      right: 13px;
+    }
+  }
+
+  &--premium {
+    padding-left: 64px;
+
+    &::after {
+      right: 60px;
+    }
+  }
+
+  &--engine {
+    padding-left: 25px;
+
+    &::after {
+      right: 112px;
+    }
+  }
+
+  &--help {
+    &::after {
+      right: 158px;
+    }
+  }
+
+  &--petrol {
+    padding-left: 24px;
+
+    &::after {
+      right: 112px;
+    }
+  }
+
+  &--parking {
+    padding-left: 33px;
+
+    &::after {
+      right: 59px;
+    }
+  }
+
+  &--inspection {
+    padding-left: 53px;
+
+    &::after {
+      right: 12px;
+    }
+  }
+}
+
+.advantages__text {
+  @include text-style(16px, 18px);
+
+  color: $black;
+}
+
+.advantages__wrapper {
+  position: relative;
+
+  margin-left: auto;
+  padding-top: 91px;
+  width: 300px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 49px;
+    right: 300px;
+
+    display: block;
+    width: 600px;
+    height: 400px;
+
+    background-image: url("../img/car-advantages.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.advantages__description {
+  @include text-style(16px, 18px);
+
+  margin: 0;
+
+  color: $black;
+  text-align: right;
+
+  &:nth-child(2) {
+    padding-top: 41px;
+    padding-left: 83px;
+    width: 217px;
+  }
+}

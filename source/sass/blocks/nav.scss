@@ -1,0 +1,53 @@
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 217px;
+  padding: 0;
+  padding-top: 23px;
+  width: 477px;
+
+  list-style: none;
+
+  &--footer {
+    padding-top: 32px;
+  }
+}
+
+.nav__item {
+  margin-right: 20px;
+  width: 85px;
+
+  text-align: center;
+
+  &--about-us {
+    margin-right: 27px;
+    width: 50px;
+  }
+
+
+  &--comment {
+    margin-right: 16px;
+  }
+
+  &--contacts {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  @include text-style(18px, 21px);
+
+  display: block;
+  padding-bottom: 3px;
+
+  color: $white;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.7;
+
+    border-bottom: 1px solid $white;
+  }
+}
